@@ -1,0 +1,68 @@
+$heading-font: 'Source Sans Pro', sans-serif;
+$body-font: 'Droid Serif', serif;
+$layout-width: 640px;
+
+$green: #7ECF7E;
+$blue: #7FCAD0;
+$bgc: #676767;
+$fc: #F4F4F4;
+$base-color: $blue;
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+html,body {
+	min-height: 100%;
+}
+body {
+	background-color: $bgc;
+	color: $fc;
+	font-family: $body-font;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: $body-font;
+}
+a {
+	// color: $base-color;
+	color: $fc;
+	text-decoration: none;
+	&:hover {
+		color: lighten( $base-color, 5% );
+	}
+}
+p {
+	text-align: justify;
+	word-break: break-all;
+	line-height: 1.4;
+	margin-bottom: 15px;
+}
+header {
+
+}
+article {
+	margin-bottom: 40px;
+}
+footer {
+	margin-top: -20px;
+}
+h1.site-title {
+	font-size: 44px;
+	margin-bottom: 30px;
+}
+h1.title {
+	margin-bottom: 15px;
+	font-size: 38px;
+	.meta {
+		font-size: 12px;
+		display: inline-block;
+		float: right;
+	}
+}
+#content {
+	height: 100%;
+	padding-bottom: 20px;
+}
+.wrap {
+	max-width: $layout-width;
+	margin: 0 auto;
+}

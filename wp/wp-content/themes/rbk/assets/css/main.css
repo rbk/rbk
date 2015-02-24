@@ -1,0 +1,79 @@
+/* line 11, ../sass/main.scss */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* line 14, ../sass/main.scss */
+html, body {
+  min-height: 100%;
+}
+
+/* line 17, ../sass/main.scss */
+body {
+  background-color: #676767;
+  color: #F4F4F4;
+  font-family: "Droid Serif", serif;
+}
+
+/* line 22, ../sass/main.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Droid Serif", serif;
+}
+
+/* line 25, ../sass/main.scss */
+a {
+  color: #F4F4F4;
+  text-decoration: none;
+}
+/* line 29, ../sass/main.scss */
+a:hover {
+  color: #92d2d7;
+}
+
+/* line 33, ../sass/main.scss */
+p {
+  text-align: justify;
+  word-break: break-all;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+/* line 42, ../sass/main.scss */
+article {
+  margin-bottom: 40px;
+}
+
+/* line 45, ../sass/main.scss */
+footer {
+  margin-top: -20px;
+}
+
+/* line 48, ../sass/main.scss */
+h1.site-title {
+  font-size: 44px;
+  margin-bottom: 30px;
+}
+
+/* line 52, ../sass/main.scss */
+h1.title {
+  margin-bottom: 15px;
+  font-size: 38px;
+}
+/* line 55, ../sass/main.scss */
+h1.title .meta {
+  font-size: 12px;
+  display: inline-block;
+  float: right;
+}
+
+/* line 61, ../sass/main.scss */
+#content {
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+/* line 65, ../sass/main.scss */
+.wrap {
+  max-width: 640px;
+  margin: 0 auto;
+}
