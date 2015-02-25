@@ -8,6 +8,13 @@
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Droid+Serif' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/reset.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/main.css">
+	<style>
+		<?php if ( get_theme_mod( 'themeslug_logo' ) ) : ?>
+			body {
+				background-image: url(<?php echo get_theme_mod( 'themeslug_logo' ); ?>);		
+			}
+		<?php endif; ?>
+	</style>
 </head>
 <body>
 <br><br>
