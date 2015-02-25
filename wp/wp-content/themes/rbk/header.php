@@ -9,9 +9,9 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/reset.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/main.css">
 	<style>
-		<?php if ( get_theme_mod( 'themeslug_logo' ) ) : ?>
+		<?php if ( get_theme_mod( 'theme_background_image' ) ) : ?>
 			body {
-				background-image: url(<?php echo get_theme_mod( 'themeslug_logo' ); ?>);		
+				background-image: url(<?php echo get_theme_mod( 'theme_background_image' ); ?>);		
 			}
 		<?php endif; ?>
 	</style>
