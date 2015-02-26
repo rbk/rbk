@@ -51,12 +51,38 @@ h1.site-title {
 }
 h1.title {
 	margin-bottom: 15px;
-	font-size: 38px;
-	.meta {
+	font-size: 26px;
+	.date {
 		font-size: 12px;
 		display: inline-block;
-		float: right;
+		width: 55px;
+		background-color: #fff;
+		color: #000;
+		height: 55px;
+		border-radius: 3px;
+		padding: 3px;
+		.day {
+			font-size: 22px;
+		}
+		span {
+			display: block;
+			text-align: center;
+			font-size: 14px;
+		}
 	}
+	.title-text {
+		width: 578px;
+		display: inline-block;
+		vertical-align:middle;
+		height: 55px;
+	}
+	a {
+		line-height: 1.2;
+	}
+}
+.single-line-date {
+	font-size: 16px;
+	margin-top: 14px;
 }
 #content {
 	height: 100%;

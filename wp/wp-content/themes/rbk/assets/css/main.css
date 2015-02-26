@@ -57,22 +57,54 @@ h1.site-title {
 /* line 52, ../sass/main.scss */
 h1.title {
   margin-bottom: 15px;
-  font-size: 38px;
+  font-size: 26px;
 }
 /* line 55, ../sass/main.scss */
-h1.title .meta {
+h1.title .date {
   font-size: 12px;
   display: inline-block;
-  float: right;
+  width: 55px;
+  background-color: #fff;
+  color: #000;
+  height: 55px;
+  border-radius: 3px;
+  padding: 3px;
+}
+/* line 64, ../sass/main.scss */
+h1.title .date .day {
+  font-size: 22px;
+}
+/* line 67, ../sass/main.scss */
+h1.title .date span {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+}
+/* line 73, ../sass/main.scss */
+h1.title .title-text {
+  width: 578px;
+  display: inline-block;
+  vertical-align: middle;
+  height: 55px;
+}
+/* line 79, ../sass/main.scss */
+h1.title a {
+  line-height: 1.2;
 }
 
-/* line 61, ../sass/main.scss */
+/* line 83, ../sass/main.scss */
+.single-line-date {
+  font-size: 16px;
+  margin-top: 14px;
+}
+
+/* line 87, ../sass/main.scss */
 #content {
   height: 100%;
   padding-bottom: 20px;
 }
 
-/* line 65, ../sass/main.scss */
+/* line 91, ../sass/main.scss */
 .wrap {
   max-width: 640px;
   margin: 0 auto;

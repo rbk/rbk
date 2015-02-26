@@ -1,11 +1,4 @@
-<?php/*
-
-	Template: Primary file for content.
-
-
-*/?>
 <?php get_header(); ?>
-
 
 <?php if( have_posts() ) : ?>
 
@@ -14,8 +7,12 @@
 	<article>
 		<div class="wrap">
 			<h1 class="title">
-				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-				<div class="meta"><?php echo the_date(); ?></div>
+				<span class="title-text"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></span>
+				<span class="date">
+					<span class="month"><?php the_time('M'); ?></span>
+					<span class="day"><?php the_time('d'); ?></span>
+					<span class="year"><?php the_time('Y') ?></span>
+				</span>
 			</h1>
 			<div class="content">
 				<?php the_excerpt(); ?>

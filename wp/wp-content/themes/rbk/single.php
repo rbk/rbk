@@ -14,8 +14,8 @@
 	<article>
 		<div class="wrap">
 			<h1 class="title">
-				<?php the_title(); ?>
-				<div class="meta"><?php echo the_date(); ?></div>
+				<span><?php the_title(); ?></span>
+				<div class="single-line-date"><?php echo the_date(); ?></div>
 			</h1>
 			<div class="content">
 				<?php the_content(); ?>
