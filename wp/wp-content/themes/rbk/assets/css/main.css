@@ -13,99 +13,103 @@ body {
   background-color: #676767;
   color: #F4F4F4;
   font-family: "Droid Serif", serif;
+  background-size: cover;
 }
 
-/* line 22, ../sass/main.scss */
+/* line 23, ../sass/main.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Droid Serif", serif;
 }
 
-/* line 25, ../sass/main.scss */
+/* line 26, ../sass/main.scss */
 a {
   color: #F4F4F4;
   text-decoration: none;
 }
-/* line 29, ../sass/main.scss */
+/* line 30, ../sass/main.scss */
 a:hover {
   color: #92d2d7;
 }
 
-/* line 33, ../sass/main.scss */
+/* line 34, ../sass/main.scss */
 p {
-  text-align: justify;
-  word-break: break-all;
   line-height: 1.4;
   margin-bottom: 15px;
 }
 
-/* line 42, ../sass/main.scss */
+/* line 41, ../sass/main.scss */
 article {
   margin-bottom: 40px;
+  padding: 20px 48px;
+  background-color: rgba(77, 77, 77, 0.7);
+  border-radius: 3px;
+  width: 70%;
+  margin: 0 auto;
 }
 
-/* line 45, ../sass/main.scss */
+/* line 49, ../sass/main.scss */
 footer {
   margin-top: -20px;
 }
 
-/* line 48, ../sass/main.scss */
+/* line 52, ../sass/main.scss */
 h1.site-title {
   font-size: 44px;
   margin-bottom: 30px;
 }
 
-/* line 52, ../sass/main.scss */
+/* line 56, ../sass/main.scss */
 h1.title {
   margin-bottom: 15px;
   font-size: 26px;
 }
-/* line 55, ../sass/main.scss */
+/* line 60, ../sass/main.scss */
 h1.title .date {
   font-size: 12px;
   display: inline-block;
-  width: 55px;
-  background-color: #fff;
-  color: #000;
+  width: 7%;
+  background-color: #7FCAD0;
+  color: #F4F4F4;
   height: 55px;
   border-radius: 3px;
   padding: 3px;
 }
-/* line 64, ../sass/main.scss */
+/* line 69, ../sass/main.scss */
 h1.title .date .day {
   font-size: 22px;
 }
-/* line 67, ../sass/main.scss */
+/* line 72, ../sass/main.scss */
 h1.title .date span {
   display: block;
   text-align: center;
   font-size: 14px;
 }
-/* line 73, ../sass/main.scss */
+/* line 78, ../sass/main.scss */
 h1.title .title-text {
-  width: 578px;
+  width: 90%;
   display: inline-block;
   vertical-align: middle;
   height: 55px;
 }
-/* line 79, ../sass/main.scss */
+/* line 84, ../sass/main.scss */
 h1.title a {
   line-height: 1.2;
 }
 
-/* line 83, ../sass/main.scss */
+/* line 88, ../sass/main.scss */
 .single-line-date {
   font-size: 16px;
   margin-top: 14px;
 }
 
-/* line 87, ../sass/main.scss */
+/* line 92, ../sass/main.scss */
 #content {
   height: 100%;
   padding-bottom: 20px;
 }
 
-/* line 91, ../sass/main.scss */
+/* line 96, ../sass/main.scss */
 .wrap {
-  max-width: 640px;
+  max-width: 900px;
   margin: 0 auto;
 }
