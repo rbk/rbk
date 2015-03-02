@@ -10,14 +10,16 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/main.css">
 	<style>
 		<?php if ( get_theme_mod( 'theme_background_image' ) ) : ?>
-			body {
+			/*body {
 				background-image: url(<?php echo get_theme_mod( 'theme_background_image' ); ?>);		
-			}
+			}*/
 		<?php endif; ?>
 	</style>
 </head>
 <body>
-<br><br>
+	<br>
+	<br>
+<div id="page-container">
 <header>
 	<div class="wrap">
 		<h1 class="site-title">
@@ -25,7 +27,14 @@
 				<?php echo get_bloginfo('name'); ?>
 			</a>
 		</h1>
+		<nav id="primary-navigation">
+			<div id="menu-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<?php wp_list_pages("title_li="); ?>
+		</nav>
 	</div>
 </header>
-<nav></nav>
 <div id="content">
