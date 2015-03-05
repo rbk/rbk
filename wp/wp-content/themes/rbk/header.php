@@ -17,15 +17,24 @@
 	</style>
 </head>
 <body>
-<br><br>
-<header>
+<div id="page-container">
+<header id="header">
 	<div class="wrap">
 		<h1 class="site-title">
 			<a href="<?php echo home_url(); ?>">
 				<?php echo get_bloginfo('name'); ?>
 			</a>
 		</h1>
+<!-- 		<nav id="primary-navigation">
+			<div id="menu-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<ul id="menu-main">
+				<?php wp_list_pages("title_li="); ?>
+			</ul>
+		</nav> -->
 	</div>
 </header>
-<nav></nav>
 <div id="content">

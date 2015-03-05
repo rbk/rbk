@@ -1,12 +1,16 @@
 $heading-font: 'Source Sans Pro', sans-serif;
 $body-font: 'Droid Serif', serif;
-$layout-width: 640px;
+$layout-width: 900px;
+
+$primary-font: 'Source Sans Pro', sans-serif;
 
 $green: #7ECF7E;
 $blue: #7FCAD0;
+$yellow: #F2DA62;
 $bgc: #676767;
-$fc: #F4F4F4;
-$base-color: $blue;
+// $fc: #F4F4F4;
+$fc: #fff;
+$base-color: $yellow;
 
 *, *:before, *:after {
 	box-sizing: border-box;
@@ -15,48 +19,108 @@ html,body {
 	min-height: 100%;
 }
 body {
+	overflow-y: scroll;
 	background-color: $bgc;
 	color: $fc;
-	font-family: $body-font;
+	font-family: $primary-font;
+	background-size: cover;
+	background-attachment: fixed;
+	padding-top: 100px;
+	// background-image: url( ../images/concrete_seamless.png );
+}
+#page-container {
+	position: relative;
+	z-index: 3;
+}
+#page-color {
+	// position: fixed;
+	// z-index:1;
+	// background-color: green;
+	// height: 100%;
+	// left: 500px;
+	// width: 1300px;
+	// transform: rotate(40deg) translateY(-400px);
+	// opacity: .4;
+	// top: 0;
+	// height: 2000px;
+}
+#overlay {
+	background-color: rgba(0,0,0,.8);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top:0; bottom:0; left:0; right:0;
+	z-index:2;
 }
 h1,h2,h3,h4,h5,h6 {
-	font-family: $body-font;
+	font-family: $primary-font;
+	line-height: 1;
 }
 a {
-	// color: $base-color;
-	color: $fc;
+	color: $base-color;
 	text-decoration: none;
 	&:hover {
 		color: lighten( $base-color, 5% );
 	}
 }
 p {
-	text-align: justify;
-	word-break: break-all;
 	line-height: 1.4;
 	margin-bottom: 15px;
 }
-header {
-
+#header  {
+	position: fixed;
+	width: 100%;
+	top:0;
+	background-color: $base-color;
 }
 article {
-	margin-bottom: 40px;
+	margin: 0 auto 40px;
 }
 footer {
 	margin-top: -20px;
 }
 h1.site-title {
-	font-size: 44px;
-	margin-bottom: 30px;
+	font-size: 28px;
+	a {
+		color: #444;		
+	}
 }
 h1.title {
 	margin-bottom: 15px;
-	font-size: 38px;
-	.meta {
+	font-size: 28px;
+
+	.date {
 		font-size: 12px;
 		display: inline-block;
-		float: right;
+		width: 7%;
+		background-color: $base-color;
+		color: #444;
+		height: 62px;
+		border-radius: 3px;
+		padding: 5px;
+		.day {
+			font-size: 22px;
+		}
+		span {
+			display: block;
+			text-align: center;
+			font-size: 14px;
+		}
 	}
+	.title-text {
+		width: 90%;
+		display: inline-block;
+		vertical-align:middle;
+		height: 55px;
+	}
+	a {
+		color: $base-color;
+		line-height: 1.2;
+	}
+}
+.single-line-date {
+	font-size: 16px;
+	margin-top: 14px;
 }
 #content {
 	height: 100%;
@@ -65,4 +129,55 @@ h1.title {
 .wrap {
 	max-width: $layout-width;
 	margin: 0 auto;
+	overflow: hidden;
+	padding: 15px;
+
+}
+
+// fade up and in animation
+@-webkit-keyframes fadeUp {
+    from {
+    	opacity: 0;
+		transform: translateY(25px);
+    }
+    to {
+		opacity: 1;
+		transform: translateY(0px);
+    }
+}
+
+
+
+#primary-navigation {
+
+	display: none;
+
+	#menu-main {
+		list-style:none;
+		padding:0;
+		margin:0;
+		width: 300px;
+		background-color: $base-color;
+		li {
+			border-bottom: 1px solid darken( $base-color, 10% );
+		}
+		a {
+			color: #444;
+			display: block;
+			padding: 5px;
+		}
+	}
+	
+	#menu-toggle {
+		float:right;
+
+		span {
+			height: 5px;
+			width: 40px;
+			background-color: #fff;
+			margin-bottom: 6px;
+			display: block;
+		}
+	}
+
 }
