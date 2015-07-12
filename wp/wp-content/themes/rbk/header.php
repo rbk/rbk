@@ -5,6 +5,7 @@
 	<title><?php echo get_bloginfo('name'); ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="google-site-verification" content="_zpe1RfSBD6goBaUHiGAmqBnEPgcjXuKYP1t8UKP32o" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/reset.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/main.css">

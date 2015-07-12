@@ -15,10 +15,7 @@
 				</span>
 			</h1>
 			<div class="content">
-				<?php the_excerpt(); ?>
-			</div>
-			<div class="links">
-				<a href="<?php the_permalink(); ?>">Continue reading</a>
+				<?php the_content(); ?>
 			</div>
 		</div>
 	</article>
